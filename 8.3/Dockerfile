@@ -12,7 +12,7 @@ RUN apt-get update \
   libgbm-dev \
   libx11-xcb1 \
   libxtst-dev \
-  && rm -rf /var/lib/apt/lists/* \
+  && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g puppeteer --unsafe-perm=true ci
 
