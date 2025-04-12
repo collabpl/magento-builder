@@ -1,4 +1,4 @@
-FROM magento/magento-cloud-docker-php:8.2-cli-1.3.5
+FROM magento/magento-cloud-docker-php:8.2-cli-1.4.2
 
 ENV ENABLE_SENDMAIL false
 ENV COMPOSER_VERSION 2.2.23
