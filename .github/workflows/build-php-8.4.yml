@@ -1,4 +1,4 @@
-name: Build & Push - collabpl/magento-builder:8.2
+name: Build & Push - collabpl/magento-builder:8.4
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ on:
     types: [published]
 
 jobs:
-  php-8-2:
+  php-8-3:
     runs-on: ubuntu-latest
     steps:
       -
@@ -32,8 +32,8 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v6
         with:
-          context: 8.3
+          context: 8.4
           platforms: linux/amd64
           push: true
           tags: |
-            collabpl/magento-builder:8.2
+            collabpl/magento-builder:8.4
