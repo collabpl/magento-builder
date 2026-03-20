@@ -1,12 +1,9 @@
 FROM magento/magento-cloud-docker-php:8.3-cli-1.4.7
 
-ENV PHP_EXTENSIONS bcmath bz2 calendar exif gd gettext intl mysqli opcache pdo_mysql redis soap sockets sodium sysvmsg sysvsem sysvshm xsl zip pcntl swoole ftp
+ENV PHP_EXTENSIONS bcmath bz2 calendar exif gd gettext intl mysqli opcache pdo_mysql redis soap sockets sodium sysvmsg sysvsem sysvshm xsl zip pcntl ftp
 
 RUN docker-php-ext-install -j$(nproc) \
   ftp
-
-RUN pecl install -o -f \
-  swoole
 
 RUN apt-get update \
   && chown root:root /var/log \
