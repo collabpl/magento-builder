@@ -24,7 +24,7 @@ On top of the upstream Magento Cloud Docker PHP CLI image, each variant adds:
   `libgbm-dev`, `libx11-xcb1`, `libxtst-dev`
 - [`puppeteer`](https://www.npmjs.com/package/puppeteer) installed globally via npm
 
-The `8.3` variant additionally installs the following PHP extensions:
+By default all images come with the following PHP extensions:
 `bcmath`, `bz2`, `calendar`, `exif`, `gd`, `gettext`, `intl`, `mysqli`, `opcache`,
 `pdo_mysql`, `redis`, `soap`, `sockets`, `sodium`, `sysvmsg`, `sysvsem`, `sysvshm`,
 `xsl`, `zip`, `pcntl`, `ftp`
@@ -32,11 +32,11 @@ The `8.3` variant additionally installs the following PHP extensions:
 ## Usage
 
 ```bash
-docker pull collabpl/magento-builder:8.4
+docker pull gitlab-registry.collab.pl/collab/docker/magento-builder:8.4
 ```
 
 ```bash
-docker run --rm -v $(pwd):/app -w /app collabpl/magento-builder:8.4 php bin/magento ...
+docker run --rm -v $(pwd):/app -w /app gitlab-registry.collab.pl/collab/docker/magento-builder:8.4 bin/magento ...
 ```
 
 ## Repository structure
