@@ -5,7 +5,7 @@ Docker images for building and deploying Magento 2 projects, extending the offic
 images with [Puppeteer](https://pptr.dev/) support for headless browser operations
 (e.g. critical CSS generation, automated browser tasks).
 
-Published on Docker Hub as [`collabpl/magento-builder`](https://hub.docker.com/r/collabpl/magento-builder).
+Published internally on gitlab-registry.collab.pl and on Docker Hub as [`collabpl/magento-builder`](https://hub.docker.com/r/collabpl/magento-builder).
 
 ## Available tags
 
