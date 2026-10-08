@@ -1,4 +1,4 @@
-FROM magento/magento-cloud-docker-php:8.5-cli-1.4.7
+FROM magento/magento-cloud-docker-php:8.5-cli-1.4.9
 
 RUN apt-get update \
   && chown root:root /var/log \
